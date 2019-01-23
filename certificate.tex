@@ -1,0 +1,73 @@
+\input{header}
+\begin{document}
+\csvreader[head to column names]{list_of_nominees.csv}{}{%
+\pagestyle{empty}
+\TileWallPaper{29.7cm}{21cm}{background}
+\centering
+\scalebox{3}{\color{red!15!black!100}
+\begin{minipage}{.33\textwidth}
+\font\border=umrandb
+\generalframe
+{\border\char'165} {\border\char'151} {\border\char'164} {\border\char'150} {\border\char'150} {\border\char'166} {\border\char'151} {\border\char'167} 
+{\centering
+\vspace{0mm}
+
+%\niceframe[1\columnwidth]{
+
+\textcolor{red!10!black!90}
+{\small \\[2mm]
+%{\normalfont\gothfamily \footnotesize Freunde und Förderer \\
+%der Theoretischen Informationstechnik e.V.}}\\
+{\normalfont\gothfamily \footnotesize Organization of \\Humanity, Women  and Children Happiness}}\\
+
+\vspace{5mm}
+\textcolor{black}
+{\textit{awards the}}
+
+\begin{minipage}{0.9\textwidth}
+%\centering
+\begin{tabular}{clc}
+\hspace{-1mm}
+\begin{minipage}{.1\textwidth}
+\includegraphics[width=1\columnwidth]{linkedin.png}        
+\end{minipage}   
+&
+\begin{minipage}{.6\textwidth}
+\textcolor{black}{\footnotesize \textsc{Best 
+\StrSubstitute[1]{\Type}{Master}{~~Master~}  %%%%% replace Master with ~~Master~, for identical length as Bachelor
+~Thesis of \Year}} 
+\end{minipage}   
+&\hspace{-3mm}
+\begin{minipage}{.12\textwidth}
+\includegraphics[width=1\columnwidth]{github.png}          
+\end{minipage}   
+\\
+\end{tabular}
+\end{minipage}
+
+\vspace{1mm}
+\begin{minipage}{0.8\textwidth}
+\centering
+%\setstretch{0.5}
+\textcolor{black!100!black!80}{
+ to {\calligra \Name}  \\[2mm] \textcolor{black!100!black!80}{\tiny for \Gender~outstanding thesis } \\ 
+[2mm]
+                                  \tiny \textbf{\somemagiccommand{\Titel}}     \\
+}
+\end{minipage}   
+
+\vspace{6mm}
+\centering
+\begin{minipage}{.9\textwidth}
+\setstretch{0.5}
+\textcolor{black!100!black!80}{
+\begin{tabular}{p{4.7cm} p{6cm}}
+\tiny \uline{~~~~~~~~~~~~~~~~~~~~~~~~~~~} & \tiny \uline{~~~~~~~~~~~~~~~~~~~~~~~~~~}  \\
+\tiny Prof. Adam Eve                 &      \tiny The Mercury Planet           \\
+\tiny University of Humanity           &      \tiny \today                        \\
+\end{tabular}}
+\end{minipage}   
+}
+\end{minipage}
+}}
+\end{document}
